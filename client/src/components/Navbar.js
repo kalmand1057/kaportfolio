@@ -15,7 +15,7 @@ function Navbar() {
       <Menu secondary>
         <Link to="/" onClick={closeMobileMenu} className="navitem"> Home </Link>
         <Link to="/aboutme" onClick={closeMobileMenu} className="navitem"> About Me </Link>
-        <Link to="/languages" onClick={closeMobileMenu} className="navitem"> Languages </Link>
+        <Link to="/languages" onClick={closeMobileMenu} className="navitem"> Technologies </Link>
         <Link to="/work" onClick={closeMobileMenu} className="navitem"> Work </Link>
         <Link to="/contact" onClick={closeMobileMenu} className="navitem"> Contact </Link>
       </Menu>

@@ -7,12 +7,17 @@ const styles = {
         marginTop: 180
     },
     big: {
-        fontSize: 60,
+        fontSize: 80,
+        fontFamily: "'Nanum Myeongjo', serif"
     },
     bkgd: {
         background: `linear-gradient(180deg, rgba(255, 255, 255, 0.3) 50%, rgba(51, 51, 51, 0.3) 100%)`,
         height: "100vh",
-      }
+    },
+    big2: {
+        fontFamily: "'Nanum Myeongjo', serif",
+        fontSize: 50,
+    }
 }
 
 
@@ -29,7 +34,7 @@ export default function Home() {
             <Container style={styles.heading}>
                 <animated.div style={props}>
                     <Header as='h1'style={styles.big}>Hello, I'm Kalena</Header>
-                    <Header as='h1'>A full stack developer</Header>
+                    <Header as='h1' style={styles.big2}>A full stack developer</Header>
                 </animated.div>
             </Container>
         </Grid>
