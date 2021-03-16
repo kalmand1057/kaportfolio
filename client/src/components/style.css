@@ -1,11 +1,26 @@
 .navitem {
     font-size: medium;
-    color: black;
+    color: whitesmoke;
     padding: 10px 15px 10px 15px;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
 .navitem:hover {
-    color: red;
+    color: #0af5be;
 }
+ .navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 2rem;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%; 
+    margin: auto;
+    top: 0;
+    border-bottom: solid 1px var(--primary-color);
+    /* opacity: 0.9; */
+    /* background: #121212; */
+ }

@@ -7,16 +7,17 @@ const styles = {
         marginTop: 180
     },
     big: {
-        fontSize: 80,
-        fontFamily: "'Nanum Myeongjo', serif"
-    },
-    bkgd: {
-        background: `linear-gradient(180deg, rgba(255, 255, 255, 0.3) 50%, rgba(51, 51, 51, 0.3) 100%)`,
-        height: "100vh",
+        fontSize: 120,
+        fontFamily: "'Poppins', sans-serif",
+        color: "whitesmoke",
     },
     big2: {
-        fontFamily: "'Nanum Myeongjo', serif",
-        fontSize: 50,
+        fontFamily: "'Poppins', sans-serif",
+        fontSize: 60,
+        color: "whitesmoke",
+    },
+    fix: {
+        height: "103vh",
     }
 }
 
@@ -29,7 +30,7 @@ export default function Home() {
     })
 
     return (
-    <div style={styles.bkgd}>
+    <div style={styles.fix}>
         <Grid centered>
             <Container style={styles.heading}>
                 <animated.div style={props}>

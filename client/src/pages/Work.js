@@ -7,14 +7,10 @@ import getawayguru from "../images/getawayguru.png";
 
 const styles = {
     heading: {
-        marginTop: 50
+        marginTop: 120
     },
     big: {
         fontSize: 60,
-    },
-    bkgd: {
-        background: `linear-gradient(180deg, rgba(255, 255, 255, 0.3) 50%, rgba(51, 51, 51, 0.3) 100%)`,
-        height: "100vh",
     },
     row: {
         width: "300px",
@@ -23,16 +19,20 @@ const styles = {
         alignContent: "center"
     },
     font: {
-        fontSize: "35px",
-        fontFamily: "'Nanum Myeongjo', serif",
+        fontSize: "70px",
+        fontFamily: "'Poppins', sans-serif",
         padding: "15px 0px 15px 30px",
-        textAlign: "center"
+        textAlign: "center",
+        color: "whitesmoke",
     },
     font2: {
         fontSize: "20px",
-        fontFamily: "'Nanum Myeongjo', serif",
-        textAlign: "center"
+        fontFamily: "'Poppins', sans-serif",
+        color: "#0af5be",
     },
+    fix: {
+        height: "103vh",
+    }
 }
 
 
@@ -44,27 +44,29 @@ export default function Home() {
     })
 
     return (
-    <div style={styles.bkgd}>
+    <div style={styles.fix}>
+            <Grid centered>
             <Container style={styles.heading}>
-            <h1 style={styles.font}>PREVIOUS WORK</h1>
-            <div className="ui stackable four column centered grid">
-                <div className="column" style={styles.font2}>
-                    <Image src={nightin}  style={styles.row} alt='nightin' />
-                    <br />
-                    <a href="https://cascutter.github.io/Project-1-Night-In/">Night In</a>
+                <h1 style={styles.font}>PREVIOUS PROJECTS</h1>
+                <div className="ui stackable four column grid">
+                    <div className="column centered">
+                        <Image src={nightin}  style={styles.row} alt='nightin' />
+                        <br />
+                        <a style={styles.font2} href="https://cascutter.github.io/Project-1-Night-In/">Night In</a>
+                    </div>
+                    <div className="column centered">
+                        <Image src={pizzaclaw}  style={styles.row} alt='pizzaclaw' />
+                        <br />
+                        <a style={styles.font2} href="https://pizzaclawfeda.herokuapp.com/">Pizza Claw</a>
+                    </div>
+                    <div className="column centered">
+                        <Image src={getawayguru}  style={styles.row} alt='getawayguru' />
+                        <br />
+                        <a style={styles.font2} href="https://getawayguru.herokuapp.com/">Getaway Guru</a>
+                    </div>
                 </div>
-                <div className="column" style={styles.font2}>
-                    <Image src={pizzaclaw}  style={styles.row} alt='pizzaclaw' />
-                    <br />
-                    <a href="https://pizzaclawfeda.herokuapp.com/">Pizza Claw</a>
-                </div>
-                <div className="column" style={styles.font2}>
-                    <Image src={getawayguru}  style={styles.row} alt='getawayguru' />
-                    <br />
-                    <a href="https://getawayguru.herokuapp.com/">Getaway Guru</a>
-                </div>
-            </div>
             </Container>
+            </Grid>
     </div>
     )
 };

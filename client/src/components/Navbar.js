@@ -12,7 +12,7 @@ function Navbar() {
     // const ctx = useContext(myContext)  
 
     return (
-      <Menu secondary>
+      <Menu secondary className="navbar">
         <Link to="/" onClick={closeMobileMenu} className="navitem"> Home </Link>
         <Link to="/aboutme" onClick={closeMobileMenu} className="navitem"> About Me </Link>
         <Link to="/languages" onClick={closeMobileMenu} className="navitem"> Technologies </Link>

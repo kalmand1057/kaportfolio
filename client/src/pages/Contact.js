@@ -4,23 +4,30 @@ import {useSpring, animated, } from 'react-spring';
 
 const styles = {
     heading: {
-        marginTop: 50
+        marginTop: 120
     },
     font: {
-        fontSize: "35px",
-        fontFamily: "'Nanum Myeongjo', serif",
+        fontSize: "70px",
+        fontFamily: "'Poppins', sans-serif",
         padding: "15px 0px 15px 30px",
-        textAlign: "center"
+        textAlign: "center",
+        color: "whitesmoke",
     },
     font2: {
-        fontSize: "16px",
-        fontFamily: "'Nanum Myeongjo', serif",
-        listStyleType: "none"
+        fontSize: "25px",
+        fontFamily: "'Poppins', sans-serif",
+        listStyleType: "none",
+        color: "whitesmoke",
     },
-    bkgd: {
-        background: `linear-gradient(180deg, rgba(255, 255, 255, 0.3) 50%, rgba(51, 51, 51, 0.3) 100%)`,
+    fix: {
         height: "103vh",
-      }
+    },
+    font3: {
+        fontSize: "25px",
+        fontFamily: "'Poppins', sans-serif",
+        listStyleType: "none",
+        color: "#0af5be",
+    }
 }
 
 
@@ -32,35 +39,24 @@ export default function Home() {
     })
 
     return (
-    <div style={styles.bkgd}>
-       <Container style={styles.heading}>
-           <h1 style={styles.font}>CONTACT</h1>
-           <div className="ui stackable four column centered grid" style={styles.font2}>
-                <div className="column">
-                    <a href="https://github.com/kalmand1057">GitHub</a>
-                </div>
-                <div className="column">
-                    <a href="https://www.linkedin.com/in/kalena-almand/">LinkedIn</a>
-                </div>
-                <div className="column">
-                    <p>Phone: 210-788-1111</p>
-                </div>
-                <div className="column">
-                    <p>Email: kalenaalmand@gmail.com</p>
-                </div>
-           </div>
-       </Container>
+    <div style={styles.fix}>
+       <Grid centered>
+        <Container style={styles.heading}>
+            <h1 style={styles.font}>CONTACT</h1>
+                <ul className="contacts">
+                    <li style={styles.font2}><a href="https://github.com/kalmand1057"  style={styles.font3}>GitHub</a></li>
+                    <br />
+                    <li style={styles.font2}><a href="https://www.linkedin.com/in/kalena-almand/"  style={styles.font3}>LinkedIn</a></li>
+                    <br />
+                    <li style={styles.font2}>210-788-1111</li>
+                    <br />
+                    <li style={styles.font2}>kalenaalmand@gmail.com</li>
+                </ul>
+        </Container>
+       </Grid>
     </div>
     )
 };
 
 
-{/* <ul className="contacts" style={styles.font2}>
-<li><a href="https://github.com/kalmand1057">GitHub</a></li>
-<br />
-<li><a href="https://www.linkedin.com/in/kalena-almand/">LinkedIn</a></li>
-<br />
-<li>Phone: 210-788-1111</li>
-<br />
-<li>Email: kalenaalmand@gmail.com</li>
-</ul> */}
+

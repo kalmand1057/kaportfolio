@@ -8,14 +8,25 @@ import Work from "./pages/Work";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 
+const styles = {
+  bkgd: {
+      background: `linear-gradient(180deg, rgba(31, 29, 29, 1) 50%, rgba(18, 18, 18, 1) 100%)`,
+      backgroundAttachment: "fixed",
+    }
+}
+
 function App() {
   return (
-    <div>
+    <div style={styles.bkgd}>
       <Router>
         <Navbar />
         <Switch>
           <Route exact path="/">
             <Home />
+            <About />
+            <Languages />
+            <Work />
+            <Contact />
           </Route>
             <Route exact path="/aboutme">
               <About />

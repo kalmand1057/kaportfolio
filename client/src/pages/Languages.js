@@ -4,22 +4,30 @@ import {useSpring, animated, } from 'react-spring';
 
 const styles = {
     heading: {
-        marginTop: 50
+        marginTop: 120
     },
     font: {
-        fontSize: "35px",
-        fontFamily: "'Nanum Myeongjo', serif",
-        padding: "15px 0px 15px 30px"
+        fontSize: "70px",
+        fontFamily: "'Poppins', sans-serif",
+        padding: "15px 0px 15px 30px",
+        color: "whitesmoke",
     },
     font2: {
-        fontSize: "16px",
-        fontFamily: "'Nanum Myeongjo', serif",
-        listStyleType: "none"
+        fontSize: "40px",
+        fontFamily: "'Poppins', sans-serif",
+        listStyleType: "none",
+        color: "#0af5be",
     },
-    bkgd: {
-        background: `linear-gradient(180deg, rgba(255, 255, 255, 0.3) 50%, rgba(51, 51, 51, 0.3) 100%)`,
+    font3: {
+        fontSize: "35px",
+        fontFamily: "'Poppins', sans-serif",
+        listStyleType: "none",
+        color: "#121212",
+        background: "#0af5be",
+    },
+    fix: {
         height: "103vh",
-      }
+    }
 }
 
 
@@ -31,21 +39,13 @@ export default function Home() {
     })
 
     return (
-    <div style={styles.bkgd}>
+    <div style={styles.fix}>
         <Grid centered>
             <Container style={styles.heading}>
-                <h1 style={styles.font}>Technologies</h1>
-                <ul style={styles.font2}>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>APIs</li>
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>MySQL</li>
-                    <li>MongoDB</li>
-                    <li>React</li>
-                </ul>
+                <h1 style={styles.font}>TECHNOLOGIES</h1>
+                <div>
+                    <p style={styles.font3}> HTML / CSS / Javascript / APIs / Node.js / Express / MySQL / MongoDB / React </p>
+                </div>
                 <br />
                 <a href="https://docs.google.com/document/d/1X1Bj0mDYDib8btaEo9UiwRb3H2kSgvShm8ZN4pjydIs/edit?usp=sharing" target="_blank" style={styles.font2}> You can view my resume here</a>
             </Container>
