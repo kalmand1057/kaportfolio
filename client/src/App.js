@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar";
 
 const styles = {
   bkgd: {
-      background: `linear-gradient(180deg, rgba(31, 29, 29, 1) 50%, rgba(18, 18, 18, 1) 100%)`,
+      background: `linear-gradient(120deg, rgba(248, 63, 118, 1) 30%, rgba(63, 161, 248, 1) 100%)`,
       backgroundAttachment: "fixed",
     }
 }

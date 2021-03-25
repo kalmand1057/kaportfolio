@@ -4,20 +4,34 @@ import {useSpring, animated, } from 'react-spring';
 
 const styles = {
     heading: {
-        marginTop: 180
+        marginTop: 100,
     },
     big: {
-        fontSize: 120,
+        fontSize: 115,
         fontFamily: "'Poppins', sans-serif",
-        color: "whitesmoke",
+        color: "#ffffff",
+        opacity: 2,
     },
     big2: {
         fontFamily: "'Poppins', sans-serif",
         fontSize: 60,
-        color: "whitesmoke",
+        color: "#ffffff",
+        opacity: 2,
     },
     fix: {
         height: "103vh",
+        width: "95vw"
+    },
+    cont: {
+        marginTop: 40,
+        padding: 60,
+        backgroundColor: "rgba(236, 237, 238, .3)",
+        borderStyle: "solid",
+        borderWidth: "1px",
+        borderColor: "rgba(236, 237, 238, .5)",
+        borderRadius: 50,
+        padding: 40,
+        boxShadow: "5px 25px 18px rgba(35, 35, 35, 0.3)",
     }
 }
 
@@ -31,14 +45,18 @@ export default function Home() {
 
     return (
     <div style={styles.fix}>
-        <Grid centered>
-            <Container style={styles.heading}>
-                <animated.div style={props}>
-                    <Header as='h1'style={styles.big}>Hello, I'm Kalena</Header>
-                    <Header as='h1' style={styles.big2}>A full stack developer</Header>
-                </animated.div>
-            </Container>
-        </Grid>
+        <div>
+            <Grid centered>
+                <Container style={styles.heading}>
+                    <div style={styles.cont}>
+                        <animated.div style={props}>
+                            <Header as='h1'style={styles.big}>Hello, I'm Kalena</Header>
+                            <Header as='h1' style={styles.big2}>A full stack developer</Header>
+                        </animated.div>
+                    </div>
+                </Container>
+            </Grid>
+        </div>
     </div>
     )
 };

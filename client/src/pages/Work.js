@@ -32,6 +32,17 @@ const styles = {
     },
     fix: {
         height: "103vh",
+    },
+    cont: {
+        marginTop: 40,
+        padding: 60,
+        backgroundColor: "rgba(236, 237, 238, .3)",
+        borderStyle: "solid",
+        borderWidth: "1px",
+        borderColor: "rgba(236, 237, 238, .5)",
+        borderRadius: 50,
+        padding: 40,
+        boxShadow: "5px 25px 18px rgba(35, 35, 35, 0.3)",
     }
 }
 
@@ -46,7 +57,7 @@ export default function Home() {
     return (
     <div style={styles.fix}>
             <Grid centered>
-            <Container style={styles.heading}>
+            <Container style={styles.cont}>
                 <h1 style={styles.font}>PREVIOUS PROJECTS</h1>
                 <div className="ui stackable four column grid">
                     <div className="column centered">

@@ -1,5 +1,5 @@
 .navitem {
-    font-size: medium;
+    font-size: large;
     color: whitesmoke;
     padding: 10px 15px 10px 15px;
     font-family: 'Poppins', sans-serif;
@@ -21,6 +21,6 @@
     margin: auto;
     top: 0;
     border-bottom: solid 1px var(--primary-color);
-    /* opacity: 0.9; */
-    /* background: #121212; */
+    /* opacity: 0.9;
+    background: #121212; */
  }
