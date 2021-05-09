@@ -50,6 +50,7 @@ export default function Home() {
                     <animated.div style={props}>
                         <h1 style={styles.big}>Hello, I'm Kalena</h1>
                         <h1 style={styles.big2}>A full stack developer</h1>
+                        <hr />
                     </animated.div>
                 </Container>
             </Jumbotron>
