@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
@@ -6,11 +6,11 @@ import About from "./pages/About";
 import Languages from "./pages/Languages";
 import Work from "./pages/Work";
 import Contact from "./pages/Contact";
-import Navbar from "./components/Navbar";
+import Menu from "./components/Menu";
 
 const styles = {
   bkgd: {
-      background: `linear-gradient(120deg, rgba(248, 63, 118, 1) 30%, rgba(63, 161, 248, 1) 100%)`,
+      background: `linear-gradient(120deg, rgba(255, 243, 242, 1) 30%, rgba(255, 243, 242, 1) 100%)`,
       backgroundAttachment: "fixed",
     }
 }
@@ -19,14 +19,11 @@ function App() {
   return (
     <div style={styles.bkgd}>
       <Router>
-        <Navbar />
+        <Menu />
         <Switch>
           <Route exact path="/">
             <Home />
             <About />
-            <Languages />
-            <Work />
-            <Contact />
           </Route>
             <Route exact path="/aboutme">
               <About />

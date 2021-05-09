@@ -2,14 +2,14 @@
     font-size: large;
     color: whitesmoke;
     padding: 10px 15px 10px 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
 
 }
 
 .navitem:hover {
     color: #0af5be;
 }
- .navbar {
+ .menu {
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -21,6 +21,11 @@
     margin: auto;
     top: 0;
     border-bottom: solid 1px var(--primary-color);
-    /* opacity: 0.9;
-    background: #121212; */
- }
+    background: #13131357;
+}
+
+/* @media screen and (max-width: 960px) {
+.navbar {
+
+}
+} */

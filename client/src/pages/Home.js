@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Header } from 'semantic-ui-react';
+import { Container, Jumbotron } from 'react-bootstrap';
 import {useSpring, animated, } from 'react-spring';
 
 const styles = {
@@ -8,19 +8,18 @@ const styles = {
     },
     big: {
         fontSize: 115,
-        fontFamily: "'Poppins', sans-serif",
-        color: "#ffffff",
+        fontFamily: "'Cormorant Garamond', serif",
+        color: "#1a1918",
         opacity: 2,
     },
     big2: {
-        fontFamily: "'Poppins', sans-serif",
+        fontFamily: "'Cormorant Garamond', serif",
         fontSize: 60,
-        color: "#ffffff",
+        color: "#1a1918",
         opacity: 2,
     },
     fix: {
         height: "103vh",
-        width: "95vw"
     },
     cont: {
         marginTop: 40,
@@ -30,7 +29,7 @@ const styles = {
         borderWidth: "1px",
         borderColor: "rgba(236, 237, 238, .5)",
         borderRadius: 50,
-        padding: 40,
+        // padding: 40,
         boxShadow: "5px 25px 18px rgba(35, 35, 35, 0.3)",
     }
 }
@@ -46,16 +45,14 @@ export default function Home() {
     return (
     <div style={styles.fix}>
         <div>
-            <Grid centered>
+            <Jumbotron fluid>
                 <Container style={styles.heading}>
-                    <div style={styles.cont}>
-                        <animated.div style={props}>
-                            <Header as='h1'style={styles.big}>Hello, I'm Kalena</Header>
-                            <Header as='h1' style={styles.big2}>A full stack developer</Header>
-                        </animated.div>
-                    </div>
+                    <animated.div style={props}>
+                        <h1 style={styles.big}>Hello, I'm Kalena</h1>
+                        <h1 style={styles.big2}>A full stack developer</h1>
+                    </animated.div>
                 </Container>
-            </Grid>
+            </Jumbotron>
         </div>
     </div>
     )
