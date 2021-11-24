@@ -19,18 +19,22 @@ const styles = {
         opacity: 2,
     },
     fix: {
-        height: "103vh",
+        height: "80vh",
+        color: "#98F5E1",
     },
-    cont: {
-        marginTop: 40,
-        padding: 60,
-        backgroundColor: "rgba(236, 237, 238, .3)",
-        borderStyle: "solid",
-        borderWidth: "1px",
-        borderColor: "rgba(236, 237, 238, .5)",
-        borderRadius: 50,
-        // padding: 40,
-        boxShadow: "5px 25px 18px rgba(35, 35, 35, 0.3)",
+    // cont: {
+    //     marginTop: 40,
+    //     padding: 60,
+    //     backgroundColor: "rgba(236, 237, 238, .3)",
+    //     borderStyle: "solid",
+    //     borderWidth: "1px",
+    //     borderColor: "rgba(236, 237, 238, .5)",
+    //     borderRadius: 50,
+    //     // padding: 40,
+    //     boxShadow: "5px 25px 18px rgba(35, 35, 35, 0.3)",
+    // }
+    bkgd: {
+        color: "#98F5E1",
     }
 }
 

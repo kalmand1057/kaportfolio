@@ -8,9 +8,12 @@ import Work from "./pages/Work";
 import Contact from "./pages/Contact";
 import Menu from "./components/Menu";
 
+const colorArr = ["#98f5e1", "#a3c4f3", "#fde4cf", "#b9fbc0", "#fcbf82"]
+const newColor = Math.floor(Math.random()*colorArr.length)
+
 const styles = {
   bkgd: {
-      background: `linear-gradient(120deg, rgba(255, 243, 242, 1) 30%, rgba(255, 243, 242, 1) 100%)`,
+      background: `${colorArr[newColor]}`,
       backgroundAttachment: "fixed",
     }
 }
