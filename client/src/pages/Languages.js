@@ -34,7 +34,7 @@ export default function Home() {
     return (
     <div style={styles.fix}>
         <Container style={styles.cont}>
-            <h1 style={styles.font}>TECHNOLOGIES</h1>
+            <h1 style={styles.font}>TECH</h1>
             <hr />
             <div>
                 <p style={styles.font3}> HTML • CSS • Javascript • APIs • Node.js • Express • MySQL • MongoDB • React </p>

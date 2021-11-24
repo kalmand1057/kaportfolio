@@ -41,23 +41,6 @@ export default function Home() {
             <Container style={styles.cont}>
                 <h1 style={styles.font}>PREVIOUS PROJECTS</h1>
                 <hr />
-                {/* <div className="ui stackable four column grid">
-                    <div className="column centered">
-                        <Image src={nightin}  style={styles.row} alt='nightin' />
-                        <br />
-                        <a style={styles.font2} href="https://cascutter.github.io/Project-1-Night-In/">Night In</a>
-                    </div>
-                    <div className="column centered">
-                        <Image src={pizzaclaw}  style={styles.row} alt='pizzaclaw' />
-                        <br />
-                        <a style={styles.font2} href="https://pizzaclawfeda.herokuapp.com/">Pizza Claw</a>
-                    </div>
-                    <div className="column centered">
-                        <Image src={getawayguru}  style={styles.row} alt='getawayguru' />
-                        <br />
-                        <a style={styles.font2} href="https://getawayguru.herokuapp.com/">Getaway Guru</a>
-                    </div>
-                </div> */}
 
 <CardGroup>
   <Card>

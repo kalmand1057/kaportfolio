@@ -30,7 +30,7 @@ export default function Home() {
         <Container style={styles.cont}>
             <Row className="justify-content-md-center">
                 <Col sm={4}>
-                    <Image src={profpic}  style={styles.row} alt='blah' />
+                    <Image src={profpic}  style={styles.row} alt='me' />
                 </Col>
                 <Col sm={8}>
                     <p style={styles.font}>My name is Kalena Almand. I am a full stack developer student with experience creating front end, 
