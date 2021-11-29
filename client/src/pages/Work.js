@@ -37,7 +37,7 @@ const styles = {
 
 export default function Home() {
     return (
-    <div style={styles.fix}>
+    <div>
             <Container style={styles.cont}>
                 <h1 style={styles.font}>PREVIOUS PROJECTS</h1>
                 <hr />

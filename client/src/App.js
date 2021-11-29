@@ -15,6 +15,9 @@ const styles = {
   bkgd: {
       background: `${colorArr[newColor]}`,
       backgroundAttachment: "fixed",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
     }
 }
 
